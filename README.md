@@ -91,3 +91,31 @@ This returns the following:
       speed and efficiency.
 ```
 
+This means that gcc/11.2.0 must first be loaded. 
+
+```
+module load gcc/11.2.0
+```
+
+Now, you should be able to load git/2.31.1:
+
+```
+module load git/2.31.1
+```
+
+Check that the newer version of  git is loaded: 
+
+```
+module list
+```
+
+It should return something like this: 
+
+```
+Currently Loaded Modules:
+  1) usc   2) python/3.9.6   3) openblas/0.3.18   4) pmix/3.2.1   5) openmpi/4.1.1   6) gcc/11.2.0   7) git/2.31.1
+
+Inactive Modules:
+  1) cuda/10.1.243
+```
+
