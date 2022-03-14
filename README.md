@@ -27,7 +27,7 @@ See instructions [here](https://git-scm.com/download/win).
 
 ## HPC 
 
-Git should already be installed on the USC HPC. By default, an older version of Git be automatically loaded when you log in.
+Git should already be installed on the USC HPC. By default, an older version of Git should be automatically loaded when you log in.
 
 Check the version:
 ```
