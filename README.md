@@ -119,3 +119,18 @@ Inactive Modules:
   1) cuda/10.1.243
 ```
 
+Run 'module save' to save the modules to your default collection. 
+
+This means that you can run 'module restore' next time you login to HPC to restore the saved modules. 
+
+E.g.
+
+```
+(base) [kojoseph@discovery1 ~]$ module restore
+Restoring modules from user's default
+(base) [kojoseph@discovery1 ~]$ module list
+
+Currently Loaded Modules:
+  1) usc            3) openblas/0.3.18   5) openmpi/4.1.1   7) git/2.31.1
+  2) python/3.9.6   4) pmix/3.2.1        6) gcc/11.2.0
+```
