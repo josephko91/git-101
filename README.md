@@ -11,7 +11,7 @@ Git can exist without Github. Github cannot exist without Git.
 
 # Downloading Git
 
-First, download Git on your local machine. See the [Git website] (https://git-scm.com/) for download links.
+First, download Git on your local machine. See the [Git website](https://git-scm.com/) for download links.
 
 ## On Mac
 
@@ -20,3 +20,6 @@ If you have [homebrew](https://docs.brew.sh/Installation) installed, simply run 
 ```
 brew install git
 ```
+
+## On HPC 
+
