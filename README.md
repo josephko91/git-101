@@ -13,7 +13,7 @@ Git can exist without Github. Github cannot exist without Git.
 
 First, download Git on your local machine. See the [Git website](https://git-scm.com/) for download links.
 
-## On Mac
+## Mac
 
 If you have [homebrew](https://docs.brew.sh/Installation) installed, simply run the following in your terminal:
 
@@ -21,5 +21,20 @@ If you have [homebrew](https://docs.brew.sh/Installation) installed, simply run 
 brew install git
 ```
 
-## On HPC 
+## Windows
 
+See instructions [here](https://git-scm.com/download/win).
+
+## HPC 
+
+Git should already be installed on the USC HPC. By default, an older version of Git be automatically loaded when you log in.
+
+Check the version:
+```
+git --version
+```
+
+As of March 14, 2022, this results in the following output:
+```
+git version 1.8.3.1
+```
