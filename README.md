@@ -15,7 +15,7 @@ First, download Git on your local machine. See the [Git website](https://git-scm
 
 ## Mac
 
-If you have [homebrew](https://docs.brew.sh/Installation) installed, simply run the following in your terminal:
+If you have [homebrew](https://docs.brew.sh/Installation) installed, run the following in your terminal:
 
 ```
 brew install git
@@ -39,9 +39,9 @@ As of March 14, 2022, this results in the following output:
 git version 1.8.3.1
 ```
 
-If you want to use the use a more recent version of Git on HPC, you will need to find the version that is installed and then load it up as a module. 
+If you want to use the use a more recent version of Git on HPC, you will need to find the versions that are installed and then load the desired version. 
 
-To find the available version of Git: 
+Run the following in the terminal to find available versions of Git: 
 ```
 module spider git
 ```
@@ -69,3 +69,25 @@ For example, this should return something like this:
      $ module spider git/2.31.1
 -----------------------------------------------------------------------------------------------------
 ```
+Say for example, you want to load Git version 2.31.1. 
+
+First, check to see if there are any prerequisate modules that need to be loaded before git/2.31.1 can be loaded:
+```
+module spider git/2.31.1
+```
+This returns the following:
+```
+------------------------------------------------------------------------------------------------------------------------------------------
+  git: git/2.31.1
+------------------------------------------------------------------------------------------------------------------------------------------
+
+    You will need to load all module(s) on any one of the lines below before the "git/2.31.1" module is available to load.
+
+      gcc/11.2.0
+ 
+    Help:
+      Git is a free and open source distributed version control system
+      designed to handle everything from small to very large projects with
+      speed and efficiency.
+```
+
