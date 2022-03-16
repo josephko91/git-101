@@ -243,3 +243,11 @@ credential.https://gist.github.com.helper=
 credential.https://gist.github.com.helper=!/home1/johndoe/.conda/envs/gh/bin/gh auth git-credential
 ```
 
+# Creating a Git Repository (i.e. "repo")
+Let's make our first demo Git repo on our local machine. 
+
+Create a new directory called "demo": `mkdir demo`<br/>
+Change into the directory: `cd demo`<br/>
+Create a README: `touch README.md`<br/>
+
+Initialize Git: `git init`<br/>
