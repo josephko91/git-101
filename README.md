@@ -155,5 +155,12 @@ git config --global user.email "your@email.com"
 ```
 Note: The user info supplied here has no connection to your user info on github. It is just used for commit logs, so people can see who made the changes and what the contact info should be for that person.
 
+Let's check to see that the global config has been modified by using: `git config --global --list`
 
+It should return something like...
+```
+user.name=Joseph Ko
+user.email=koseph123@gmail.com
+...
+```
 # Github authentication
