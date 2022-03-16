@@ -244,10 +244,16 @@ credential.https://gist.github.com.helper=!/home1/johndoe/.conda/envs/gh/bin/gh 
 ```
 
 # Creating a Git Repository (i.e. "repo")
-Let's make our first demo Git repo on our local machine. 
+Let's make our first demo Git repo on our local machine (e.g. HPC, laptop, desktop, etc.):  
 
 Create a new directory called "demo": `mkdir demo`<br/>
 Change into the directory: `cd demo`<br/>
 Create a README: `touch README.md`<br/>
+Use your text editor (vim, vi, nano, etc.) of choice to add title and description to the README: `vim README.md`<br/>
+e.g.
+```
+# demo
 
+This is a git repo demo.
+```
 Initialize Git: `git init`<br/>
