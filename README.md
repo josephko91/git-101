@@ -134,3 +134,26 @@ Currently Loaded Modules:
   1) usc            3) openblas/0.3.18   5) openmpi/4.1.1   7) git/2.31.1
   2) python/3.9.6   4) pmix/3.2.1        6) gcc/11.2.0
 ```
+
+# Git configuration 
+After installing git, we need to modify our git configurations. 
+
+There are three scopes of config: system, global, and local. 
+
+*System config* controls settings for all users and all repositories for the whole system. 
+
+*Global config* controls settings for the current user and all repositories for this user. 
+
+*Local config* controls settings for a specific repository. 
+
+Settings at the smaller scope will supercede settings at the larger scope. For example, local config settings will take precedence over the global config settings in the case where there are two conflicting settings. 
+
+Let's fist add user information to the global config file. 
+```
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
+Note: The user info supplied here has no connection to your user info on github. It is just used for commit logs, so people can see who made the changes and what the contact info should be for that person.
+
+
+# Github authentication
