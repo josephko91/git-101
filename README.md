@@ -205,7 +205,7 @@ Next, we install [Github CLI](https://github.com/cli/cli#installation) so that w
 >Activate the new environment: `conda activate gh`  
 >Install Github CLI: `conda install gh --channel conda-forge`  
 
-Now, we should be able to the gh tools to [cache the authentication](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git):
+Now, we should be able to use Github CLI (i.e. 'gh') to [cache the authentication](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git):
 In the command line, enter: `gh auth login`
 
 Answer the series of questions that appear in the terminal. 
