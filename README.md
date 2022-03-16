@@ -272,7 +272,6 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 This tells you a few things:
 - Which branch you are on -> master
-- Which commit -> initial
 - Untracked files -> README is not being tracked by git yet
 
 "Committing" is like taking a snapshot of your repo. In order to commit, you must first add the files you want to commit to the staging area using the "add" command: 
@@ -287,3 +286,24 @@ This tells you a few things:
 nothing to commit, working directory clean
 ```
 ![image](https://user-images.githubusercontent.com/3221060/158644532-495bf389-3faa-474b-a1e3-b2bce8515620.png)
+
+Change name of master branch to "main" (see reason why [here](https://sfconservancy.org/news/2020/jun/23/gitbranchname/)): `git branch -M master main`
+
+The branch name should now be changed to "main": 
+```
+(base) [johndoe@discovery1 demo]$ git status
+# On branch main
+nothing to commit, working directory clean
+```
+
+Congrats! You've now officially made your first Git commit. 
+
+# Pushing to Github
+So now you have a local git repository, but how do you sync to github? 
+
+First, go to your github repositories and click the green "New" button to create a new repo: 
+![image](https://user-images.githubusercontent.com/3221060/158646551-9d9d3afa-6b9e-438a-a73a-6941014fa8e5.png)
+
+Name the repo and click create. The following page should appear: 
+![image](https://user-images.githubusercontent.com/3221060/158646653-19cc4edd-b634-433e-b093-e4bec5f4960a.png)
+
