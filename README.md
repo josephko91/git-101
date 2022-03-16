@@ -324,3 +324,15 @@ Refresh the page on your "demo" github repo page and you shold now see the remot
 
 Congrats! You have successfully finished your first "push" from your local git repo to the remote Github repo.
 
+# Starting a repo from Github (remote -> local)
+What if we wanted to go the other way around - start a remote repo on Github and then sync with our local machine? We'll do an example here below. 
+
+Let's create a new repo in Github and call it "fav-foods": 
+![image](https://user-images.githubusercontent.com/3221060/158652799-285b427f-d51c-42e4-83c9-51140db6279a.png)
+
+One added benefit of creating a repo on Github first is that you can easily add and modify the README, gitignore, and license in the browser. 
+
+You should see the repo immediately created:
+![image](https://user-images.githubusercontent.com/3221060/158653045-5a9651c7-5a11-4e28-8e77-f0c127a01b2a.png)
+
+![image](https://user-images.githubusercontent.com/3221060/158651805-6932187b-56fd-4592-b06b-20e7dcf1139d.png)
