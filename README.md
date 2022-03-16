@@ -286,3 +286,4 @@ This tells you a few things:
 # On branch master
 nothing to commit, working directory clean
 ```
+![image](https://user-images.githubusercontent.com/3221060/158644532-495bf389-3faa-474b-a1e3-b2bce8515620.png)
