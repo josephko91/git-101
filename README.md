@@ -171,6 +171,20 @@ Unfortunately, Windows and Mac/Linux deal with end-of-line in text differently. 
 The [git documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) summarizes this issue as follows:
 >This is because Windows uses both a carriage-return character and a linefeed character for newlines in its files, whereas macOS and Linux systems use only the linefeed character. This is a subtle but incredibly annoying fact of cross-platform work; many editors on Windows silently replace existing LF-style line endings with CRLF, or insert both line-ending characters when the user hits the enter key.
 
+To deal with this, change the config as follows: 
+>If Windows: `git config --global core.autocrlf true`
+>If Mac/Linux: `git config --global core.autocrlf input`
 
+Let's view the config file to make sure that this has been changed: `git config --global --edit`
+
+Notice that the config file opens in your default text editor this time since we used the --edit flag instead of the --list flag. 
+You should see something like this: 
+```
+[user]
+        name = John Doe
+        email = johndoe@gmail.com
+[core]
+        autocrlf = input
+```
 
 # Github authentication
