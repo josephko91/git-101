@@ -175,6 +175,8 @@ To deal with this, change the config as follows:
 >If Windows: `git config --global core.autocrlf true`
 >If Mac/Linux: `git config --global core.autocrlf input`
 
+For more details about this LF vs. CRLF issue, see details [here](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) under "core.autocrlf"
+
 Let's view the config file to make sure that this has been changed: `git config --global --edit`
 
 Notice that the config file opens in your default text editor this time since we used the --edit flag instead of the --list flag. 
@@ -186,5 +188,9 @@ You should see something like this:
 [core]
         autocrlf = input
 ```
+
+Exit the config file once you're satisfied (e.g., ':q' in vim). 
+
+There are a lot more settings that you can alter in config, but this is good enough to get started. See the [git-config doc](https://git-scm.com/docs/git-config) for full details.
 
 # Github authentication
