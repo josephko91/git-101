@@ -287,15 +287,6 @@ nothing to commit, working directory clean
 ```
 ![image](https://user-images.githubusercontent.com/3221060/158644532-495bf389-3faa-474b-a1e3-b2bce8515620.png)
 
-Change name of master branch to "main" (see reason why [here](https://sfconservancy.org/news/2020/jun/23/gitbranchname/)): `git branch -M master main`
-
-The branch name should now be changed to "main": 
-```
-(base) [johndoe@discovery1 demo]$ git status
-# On branch main
-nothing to commit, working directory clean
-```
-
 Congrats! You've now officially made your first Git commit. 
 
 # Pushing to Github
@@ -307,3 +298,22 @@ First, go to your github repositories and click the green "New" button to create
 Name the repo and click create. The following page should appear: 
 ![image](https://user-images.githubusercontent.com/3221060/158646653-19cc4edd-b634-433e-b093-e4bec5f4960a.png)
 
+Since we started by creating a git repo on our local machine, we will be following the instructions under "…or push an existing repository from the command line"
+```
+git remote add origin https://github.com/josephko91/demo.git
+```
+This line adds the git URL as an alias, "origin"
+```
+git branch -M main
+```
+This changes the name of the "master" branch to "main" (see reason why [here](https://sfconservancy.org/news/2020/jun/23/gitbranchname/).
+```
+git push -u origin main
+```
+This pushes the local commits to the remote Github repo. The -u flag adds an upstream reference for the specified branch (i.e. links the local and remote branch), so that in the future, you can `git push` or `git pull` without specifying the local/remote branch. 
+
+We can also confirm that the branch name has been changed to "main": 
+```
+(base) [johndoe@discovery1 demo]$ git status
+# On branch main
+nothing to commit, working directory clean
