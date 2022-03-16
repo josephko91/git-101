@@ -228,3 +228,18 @@ The minimum required scopes are 'repo', 'read:org', 'workflow'.
 ✓ Configured git protocol
 ✓ Logged in as johndoe
 ```
+
+Congrats! You're now authenticated and your credentials have been cached so you don't have to enter a token every time.
+
+To confirm, type `git config --global --list` in the terminal. You should see some information now added to your config file about where your authentication credentials have been cached. 
+```
+(gh) [johndoe@discovery2 git-test]$ git config --global --list
+user.name=John Doe
+user.email=johndoe@gmail.com
+core.autocrlf=input
+credential.https://github.com.helper=
+credential.https://github.com.helper=!/home1/johndoe/.conda/envs/gh/bin/gh auth git-credential
+credential.https://gist.github.com.helper=
+credential.https://gist.github.com.helper=!/home1/johndoe/.conda/envs/gh/bin/gh auth git-credential
+```
+
