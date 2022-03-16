@@ -166,7 +166,7 @@ user.email=johndoe@gmail.com
 
 Let's change one more setting in global config. 
 
-Unfortunately, Windows and Mac/Linux deal with end-of-line in text differently. This can cause issues when handing off files between users of different OS.
+Unfortunately, Windows and Mac/Linux deal with newlines in text differently. This can cause issues when handing off files between users of different OS.
 
 The [git documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) summarizes this issue as follows:
 >This is because Windows uses both a carriage-return character and a linefeed character for newlines in its files, whereas macOS and Linux systems use only the linefeed character. This is a subtle but incredibly annoying fact of cross-platform work; many editors on Windows silently replace existing LF-style line endings with CRLF, or insert both line-ending characters when the user hits the enter key.
@@ -194,3 +194,7 @@ Exit the config file once you're satisfied (e.g., ':q' in vim).
 There are a lot more settings that you can alter in config, but this is good enough to get started. See the [git-config doc](https://git-scm.com/docs/git-config) for full details.
 
 # Github authentication
+In order to establish the connection between Git and Github, we must first authenticate our Github credentials using a secure protocol. This is done either through HTTPS or SSH. 
+
+For sake of example, we will use HTTPS here and cache our credentials using (GitHub CLI)[https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git] so we don't have to enter our authentication token (i.e., password) each time we interface with Github on the terminal. 
+
