@@ -196,5 +196,11 @@ There are a lot more settings that you can alter in config, but this is good eno
 # Github authentication
 In order to establish the connection between Git and Github, we must first authenticate our Github credentials using a secure protocol. This is done either through HTTPS or SSH. 
 
-For sake of example, we will use HTTPS here and cache our credentials using (GitHub CLI)[https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git] so we don't have to enter our authentication token (i.e., password) each time we interface with Github on the terminal. 
+For sake of example, we will use HTTPS here and cache (i.e. store) our credentials using [GitHub CLI](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git) so we don't have to enter our authentication token (i.e., password) each time we interface with Github on the terminal. 
 
+First, generate a personal access token on Github. Follow the instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) and copy/paste the token somewhere accessible to you. 
+
+Next, we install [Github CLI](https://github.com/cli/cli#installation) so that we cache our credentials. On HPC, we can do this via conda:
+First, create a new conda environment: `conda create --name gh`
+Activate the new environment: `conda activate gh`
+Install Github CLI: `conda install gh --channel conda-forge`
