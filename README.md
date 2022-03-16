@@ -318,3 +318,9 @@ We can also confirm that the branch name has been changed to "main":
 # On branch main
 nothing to commit, working directory clean
 ```
+
+Refresh the page on your "demo" github repo page and you shold now see the remote repo updated with your readme:
+![image](https://user-images.githubusercontent.com/3221060/158651805-6932187b-56fd-4592-b06b-20e7dcf1139d.png)
+
+Congrats! You have successfully finished your first "push" from your local git repo to the remote Github repo.
+
