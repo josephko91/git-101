@@ -257,3 +257,21 @@ e.g.
 This is a git repo demo.
 ```
 Initialize Git: `git init`<br/>
+Check status: `git status`
+At this point you should see the following:
+```
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	    README.md
+nothing added to commit but untracked files present (use "git add" to track)
+```
+This tells you a few things:
+- Which branch you are on -> master
+- Which commit -> initial
+- Untracked files -> README is not being tracked by git yet
+
