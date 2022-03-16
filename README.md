@@ -299,21 +299,22 @@ Name the repo and click create. The following page should appear:
 ![image](https://user-images.githubusercontent.com/3221060/158646653-19cc4edd-b634-433e-b093-e4bec5f4960a.png)
 
 Since we started by creating a git repo on our local machine, we will be following the instructions under "…or push an existing repository from the command line"
+The first line adds the git URL as an alias, "origin":
 ```
 git remote add origin https://github.com/josephko91/demo.git
 ```
-This line adds the git URL as an alias, "origin"
+The second line changes the name of the "master" branch to "main" (see reason why [here](https://sfconservancy.org/news/2020/jun/23/gitbranchname/)):
 ```
 git branch -M main
 ```
-This changes the name of the "master" branch to "main" (see reason why [here](https://sfconservancy.org/news/2020/jun/23/gitbranchname/).
+This pushes the local commits to the remote Github repo. The -u flag adds an upstream reference for the specified branch (i.e. links the local and remote branch), so that in the future, you can `git push` or `git pull` without specifying the local/remote branch:
 ```
 git push -u origin main
 ```
-This pushes the local commits to the remote Github repo. The -u flag adds an upstream reference for the specified branch (i.e. links the local and remote branch), so that in the future, you can `git push` or `git pull` without specifying the local/remote branch. 
 
 We can also confirm that the branch name has been changed to "main": 
 ```
 (base) [johndoe@discovery1 demo]$ git status
 # On branch main
 nothing to commit, working directory clean
+```
