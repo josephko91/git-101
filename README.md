@@ -335,4 +335,15 @@ One added benefit of creating a repo on Github first is that you can easily add 
 You should see the repo immediately created:
 ![image](https://user-images.githubusercontent.com/3221060/158653045-5a9651c7-5a11-4e28-8e77-f0c127a01b2a.png)
 
-![image](https://user-images.githubusercontent.com/3221060/158651805-6932187b-56fd-4592-b06b-20e7dcf1139d.png)
+We now need to clone the repo to our local machine.
+
+First, copy the HTTPS link from your Github repo: 
+![image](https://user-images.githubusercontent.com/3221060/158653690-fd711589-c89b-409e-ac88-779a3ded2f9e.png)
+
+Then go to your terminal and make sure you're not in another git repo already.
+
+Then type `git clone https://github.com/josephko91/fav-foods.git`
+
+This will copy the contents of the fav-food remote repo onto your local machine in your current directory. 
+
+
