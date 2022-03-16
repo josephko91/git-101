@@ -163,4 +163,14 @@ user.name=John Doe
 user.email=johndoe@gmail.com
 ...
 ```
+
+Let's change one more setting in global config. 
+
+Unfortunately, Windows and Mac/Linux deal with end-of-line in text differently. This can cause issues when handing off files between users of different OS.
+
+The [git documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) summarizes this issue as follows:
+>This is because Windows uses both a carriage-return character and a linefeed character for newlines in its files, whereas macOS and Linux systems use only the linefeed character. This is a subtle but incredibly annoying fact of cross-platform work; many editors on Windows silently replace existing LF-style line endings with CRLF, or insert both line-ending characters when the user hits the enter key.
+
+
+
 # Github authentication
