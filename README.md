@@ -140,11 +140,11 @@ After installing git, we need to modify our git configurations.
 
 There are three scopes of config: system, global, and local. 
 
-*System config* controls settings for all users and all repositories for the whole system. 
+>*System config* controls settings for all users and all repositories for the whole system. 
 
-*Global config* controls settings for the current user and all repositories for this user. 
+>*Global config* controls settings for the current user and all repositories for this user. 
 
-*Local config* controls settings for a specific repository. 
+>*Local config* controls settings for a specific repository. 
 
 Settings at the smaller scope will supercede settings at the larger scope. For example, local config settings will take precedence over the global config settings in the case where there are two conflicting settings. 
 
