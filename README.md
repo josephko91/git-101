@@ -275,3 +275,14 @@ This tells you a few things:
 - Which commit -> initial
 - Untracked files -> README is not being tracked by git yet
 
+"Committing" is like taking a snapshot of your repo. In order to commit, you must first add the files you want to commit to the staging area using the "add" command: 
+```
+(base) [johndoe@discovery1 demo]$ git add .
+(base) [johndoe@discovery1 demo]$ git commit -m "add readme"
+[master (root-commit) 3548f2c] add readme
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+(base) [johndoe@discovery1 demo]$ git status
+# On branch master
+nothing to commit, working directory clean
+```
