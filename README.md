@@ -159,8 +159,8 @@ Let's check to see that the global config has been modified by using: `git confi
 
 It should return something like...
 ```
-user.name=Joseph Ko
-user.email=koseph123@gmail.com
+user.name=John Doe
+user.email=johndoe@gmail.com
 ...
 ```
 # Github authentication
