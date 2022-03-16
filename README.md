@@ -204,3 +204,27 @@ Next, we install [Github CLI](https://github.com/cli/cli#installation) so that w
 >First, create a new conda environment: `conda create --name gh`  
 >Activate the new environment: `conda activate gh`  
 >Install Github CLI: `conda install gh --channel conda-forge`  
+
+Now, we should be able to the gh tools to [cache the authentication](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git):
+In the command line, enter: `gh auth login`
+
+Answer the series of questions that appear in the terminal. 
+- When asked for preferred protocol, select HTTPS. 
+- When asked how you would like to authenticate GitHub CLI, select authentication token. 
+- The authentication token is the "personal access token" you generated earlier on your Github page. Copy/paste it from wherever you saved it last. 
+
+The output in the terminal should look something like this: 
+```
+(gh) [johndoe@discovery2 git-test]$ gh auth login
+? What account do you want to log into? GitHub.com
+? You're already logged into github.com. Do you want to re-authenticate? Yes
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Paste an authentication token
+Tip: you can generate a Personal Access Token here https://github.com/settings/tokens
+The minimum required scopes are 'repo', 'read:org', 'workflow'.
+? Paste your authentication token: ****************************************
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as johndoe
+```
