@@ -348,4 +348,17 @@ Then type `git clone https://github.com/josephko91/fav-foods.git`
 
 This will copy the contents of the fav-food remote repo onto your local machine in your current directory. 
 
+# What is .gitignore?
+(coming soon)
+
+# Branching and merging
+
+(coming soon)
+
+# Pull requests
+(coming soon)
+## What is a pull request
+(coming soon)
+## How to make a pull request
+(coming soon)
 
