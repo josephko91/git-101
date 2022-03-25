@@ -349,7 +349,18 @@ Then type `git clone https://github.com/josephko91/fav-foods.git`
 This will copy the contents of the fav-food remote repo onto your local machine in your current directory. 
 
 # What is .gitignore?
-(coming soon)
+gitignore is a hidden file in your project directory that is essentially a list of all the types of files and/or directories that git should NOT track. For [example](https://www.atlassian.com/git/tutorials/saving-changes/gitignore):
+- large data files
+- dependency caches, such as the contents of /node_modules or /packages
+- compiled code, such as .o, .pyc, and .class files
+- build output directories, such as /bin, /out, or /target
+- files generated at runtime, such as .log, .lock, or .tmp
+- hidden system files, such as .DS_Store or Thumbs.db
+- personal IDE config files, such as .idea/workspace.xml
+
+You can edit your gitignore file using a text editor of choice e.g., `vim .gitignore`
+
+The nice thing about starting a repo in Github (see above) is that there is the option to use boiler-plate gitignore files based on common languages (e.g., python, java, etc.). These gitignore templates are usually a good starting point and you can modify the gitignore as needed as your projects evolve.
 
 # Branching and merging
 
